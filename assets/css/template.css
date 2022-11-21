@@ -1,0 +1,320 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;  /*padrao para todas as fontes*/
+}
+
+body{
+    margin: 0;   /*tirando a margin e o padding padrao q vem no navegador*/
+    padding: 0;;
+}
+
+header{
+    display: flex;   /*todos os itens ficam um ao lado do outro*/
+    justify-content: center;   /*alinhar no meio da tela*/
+    height: 130px;   /*altura*/
+    background-color: rgb(110, 110, 110);
+}
+
+.container{
+    display: flex;  /*todos os itens ficam um ao lado do outro*/
+    justify-content: space-between;  /*um ao lado do outro*/
+    width: 1100px;   /*largura*/
+}
+
+.logo img{   /*diminuindo o tamanho da img para caber no container*/
+    height: 145px;
+    width: 300px;
+}
+
+.logo{
+    display: flex;  /*todos ficam um ao lado do outro*/
+    align-items: center;   /*alinhando os itens ao centro*/
+}
+
+.menu{
+    display: flex;  /*deixando a div do menu um ao lado do outro*/
+    align-items: center;  /*alinhando os mesmos no centro*/
+}
+
+nav ul, nav li{
+    list-style: none;   /*vai tirar os pontos dos menus*/
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;  /*deixando os itens do menu um ao lado do outro*/
+}
+
+nav a{
+    display: block;    /*para conseguir alterar o tamanho do item do menu*/
+    padding: 15px;    /*tamanho do item do menu, de cada um*/
+    text-decoration: none;    /*tira os sublinhados do menu*/
+    color: #ffffff;    /*cor das letras*/
+    margin-right: 40px;   /*para distanciar um menu do outro*/
+    font-size: 20px;
+}
+
+nav .active a, nav a:hover{  /*usa-se para qnd passa o mouse selecionar o menu desejado*/
+    background-color: black;
+    color: #ffffff;
+
+}
+
+#banner{
+    display: flex;   /*alinhando todos ao lado*/
+    justify-content: center;    /* alinhando no meio da tela*/
+    background-image: url('../images/wallpaper.png');  /*chamando a img*/
+    background-size: cover;   /*para preencher a img no banner inteiro*/
+    height: 800px;   /*aqui a altura que a imagem vai fica*/
+}
+
+.column{
+    flex-direction: column;  /*alinhamento de coluna(um a bxo do outro)*/
+}
+
+.banner_headline h1{
+    color: #ffffff;   /*cor da fonte*/
+    font-size: 70px;    /*tamanho das letras*/
+    text-shadow: 0px 1px 0px #dad9d9;  
+    margin: 35px;    /* margem*/
+    text-align: center;   /*alinhar o text no meio */
+}
+
+.banner_headline h2{
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 500px;
+    width: 150px;
+    text-align: center;
+
+}
+
+#geral{
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/wallpaper_02.png");
+    background-size: cover;
+    height: 950px;
+    width: 100%;
+}
+
+.container{
+    justify-content: space-between;
+}
+
+.title_historia h1{
+    color: #ffffff;
+    font-size: 60px;
+    text-align: center;
+}
+
+.corpo_historia h2{
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+}
+
+#geral_02{
+    display: flex;
+    justify-content: center;
+    background-color: #7a7a7a;
+}
+
+.title_formacao{
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.title_formacao h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+.formacao_original{
+    display: flex;    /*um ao lado do outro*/
+}
+
+.img_formacao_original img{
+    width: 550px;       /*largura*/
+    height: 410px;      /*altura*/
+    box-shadow:7px 7px 7px #000000
+}
+
+.text_formacao_original{
+    width: 550px;   /*largura*/
+    margin-left: 150px;     /*margem esquerda*/
+}
+
+.text_formacao_original ul{
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+}
+
+.text_formacao_original li{
+    padding: 20px;
+    align-items: center;    /*alinhando os itens no centro*/
+    font-size: 20px;    /*tamanho fonte*/
+    color: #ffffff;
+}
+
+.ano_formacao{
+    list-style: none;   /*tirando o ponto do lado*/
+    margin-left: 100px;   /*margem esquerda*/
+    font-weight: bold;   /*deixar em negrito*/
+}
+
+#geral_03{
+    display: flex;
+    justify-content: center;
+}
+
+.text_formacao_1990{
+    width: 550px;   /*largura*/
+    margin-right: 150px;     /*margem direita*/
+}
+
+.text_formacao_1990 ul{
+    border: 2px solid #000000;
+    border-radius: 15px;
+}
+
+.text_formacao_1990 li{
+    padding: 20px;
+    align-items: center;    /*alinhando os itens no centro*/
+    font-size: 20px;    /*tamanho fonte*/
+}
+
+.ano_formacao_1990{
+    list-style: none;   /*tirando o ponto do lado*/
+    margin-left: 100px;   /*margem esquerda*/
+    font-weight: bold;   /*deixar em negrito*/
+}
+
+.img_formacao_1990 img{
+    width: 550px;       /*largura*/
+    height: 460px;      /*altura*/
+    box-shadow:7px 7px 7px #000000
+}
+
+#geral_04{
+    display: flex;
+    justify-content: center;
+    background-color: #7a7a7a;
+}
+
+.formacao_2015{
+    display: flex;    /*um ao lado do outro*/
+}
+
+.img_formacao_2015 img{
+    width: 550px;       /*largura*/
+    height: 580px;      /*altura*/
+    box-shadow:7px 7px 7px #000000
+}
+
+.text_formacao_2015{
+    width: 550px;   /*largura*/
+    margin-left: 150px;     /*margem esquerda*/
+}
+
+.text_formacao_2015 ul{
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+}
+
+.text_formacao_2015 li{
+    padding: 20px;
+    align-items: center;    /*alinhando os itens no centro*/
+    font-size: 20px;    /*tamanho fonte*/
+    color: #ffffff;
+}
+
+.ano_formacao{
+    list-style: none;   /*tirando o ponto do lado*/
+    margin-left: 100px;   /*margem esquerda*/
+    font-weight: bold;   /*deixar em negrito*/
+}
+
+#geral_05{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.formacao_atual{
+    display: flex;
+}
+
+.text_formacao_atual{
+    width: 550px;   /*largura*/
+    margin-right: 150px;     /*margem direita*/
+}
+
+.text_formacao_atual ul{
+    border: 2px solid #000000;
+    border-radius: 15px;
+}
+
+.text_formacao_atual li{
+    padding: 20px;
+    align-items: center;    /*alinhando os itens no centro*/
+    font-size: 20px;    /*tamanho fonte*/
+}
+
+.ano_formacao{
+    list-style: none;   /*tirando o ponto do lado*/
+    margin-left: 100px;   /*margem esquerda*/
+    font-weight: bold;   /*deixar em negrito*/
+}
+
+.img_formacao_atual img{
+    width: 550px;       /*largura*/
+    height: 520px;      /*altura*/
+    box-shadow:7px 7px 7px #000000
+}
+
+footer{
+    background-color:#7a7a7a;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_area{
+    display: flex;
+    color: #ffffff;
+}
+
+footer .widget_title_text{
+    color: #ffffff;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer .widget_body{
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.footer_copy{
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.sociais_media{
+    margin: 20px;
+}
+
+.sociais_media img{
+    height: 30px;
+    width: 30px;
+}
